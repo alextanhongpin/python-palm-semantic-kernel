@@ -13,6 +13,10 @@ kernel.add_text_completion_service(
     "models/text-bison-001", 
     sk_gp.GooglePalmTextCompletion("models/text-bison-001", api_key),
 )
+kernel.add_text_embedding_generation_service(
+    "gecko", 
+    sk_gp.GooglePalmTextEmbedding("models/embedding-gecko-001", apikey),
+)
 ```
 
 ## Setting up logger
